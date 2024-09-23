@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "g++ compile",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-O0",
+                "test.cpp"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe アクティブなファイルのビルド",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "デバッガーによって生成されたタスク。"
+        }
+    ]
+}
