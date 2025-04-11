@@ -12,7 +12,7 @@ int main() {
    for (int i=0;i<n;i++){
       cin >> h[i];
    }
-   
+
    int dp[n];
    for(int i=0; i<n; i++){
       dp[i]=inf;
