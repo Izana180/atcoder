@@ -15,7 +15,7 @@ int main() {
         appCount[a[i]]++;
     }
 
-    // d<=0(!?)
+    // d>=0(!?)
     int ans=0;
 
     if(d==0){
